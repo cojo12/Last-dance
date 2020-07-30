@@ -5,7 +5,6 @@ Repo: https://github.com/cojo12/Last-dance
 
 # Quick Start
 1. Open the app here: [placeholder for heroku link]
-Technologies
 
 # Installation
 ` placeholder `
