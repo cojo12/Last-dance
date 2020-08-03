@@ -5,6 +5,10 @@ app.get('/', (req, res) => {
     res.send();
 });
 
+app.get('/api/users', (req, res) => {
+  res.send();
+});
+
 app.listen(3000, () => {
   console.log('start');
 });
