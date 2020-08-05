@@ -1,20 +1,15 @@
 import React from "react";
 import '../navbar/style.css'
 
+
 import {
-  Collapse,
   Navbar,
-  NavbarToggler,
-  NavbarBrand,
   Nav,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText
+  Button
 } from 'reactstrap';
+
 
 function Navigation({}) {
 
@@ -36,10 +31,12 @@ function Navigation({}) {
               <NavLink href="/favorites/">Favorites</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/favorites/">My Itineraries</NavLink>
+              <NavLink href="/itineraries/">My Itineraries</NavLink>
             </NavItem>
           </Nav>
-          <NavbarText>Simple Text</NavbarText>
+          <a href = "/profile/" target="_blank">
+            <Button>My Profile</Button>
+          </a>
 
       </Navbar>
     </div>
