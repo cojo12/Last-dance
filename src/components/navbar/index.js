@@ -1,4 +1,6 @@
 import React from "react";
+import '../navbar/style.css'
+
 import {
   Collapse,
   Navbar,
@@ -17,9 +19,14 @@ import {
 function Navigation({}) {
 
   return (
+
     <div>
       <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">Journey</NavbarBrand>
+        {/* <NavbarBrand href="/">Journey</NavbarBrand> */}
+      <img
+      src = {'/images/logo/journey-logo_transparent-crop.png'}
+      alt = "Journey Logo"
+      />
           
         <Nav className="mr-auto" navbar>
             <NavItem>
