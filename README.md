@@ -11,18 +11,19 @@ Repo: https://github.com/cojo12/Last-dance
 
 # Technologies
 - React.js
-- Passport
+- Auth0
 - MapQuest
 
 # Contributors
 ## Cole Joko [![quiz](https://img.shields.io/badge/GitHub-Cole-black?logo=github&style=flat-square)](https://github.com/cojo12)
 - Repo Master
-- Backend Dev
+- Frontend & Backend Dev
 
 ## Collin Vaccaro [![quiz](https://img.shields.io/badge/GitHub-Collin-black?logo=github&style=flat-square)](https://github.com/vinnie00)
-- Frontend Dev
+- Frontend & Backend Dev
 - Makes things pretty
 
 ## Miranda Loosle [![quiz](https://img.shields.io/badge/GitHub-Mirandor-black?logo=github&style=flat-square)](https://github.com/Mirandor)
 - Wireframing
+- Frontend & Backend Dev
 - Project Management
