@@ -1,25 +1,23 @@
 import React from "react";
-// import Heading from "../cardHeading";
+import CardHeading from "../cardHeader/index";
 import {
   Card, CardText, CardBody,
   CardTitle,
-  Button, Col, Row
+  Button, Col
 } from 'reactstrap';
 
-function ItineraryCard({itineraryName}) {
+function ItineraryCard() {
 return (
   <div>
-      <Row>
-        <Col sm="6">
+        <Col sm="8">
         <Card>
-              {/* <div className="card-header">
-                {/* <Heading itineraryName = {itineraryName} /> */}
-              {/* </div> */} 
+          <CardHeading />
+
             <CardBody>
             <CardTitle>
                 Location
             </CardTitle>
-            <CardText width="60%">
+            <CardText>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus omnis itaque eius eos. Architecto, deserunt voluptas dolorum, illum ipsam magni aut cumque similique aliquam, rem officia rerum ipsum impedit accusamus.
             </CardText>
             <Button color="success" size="md">
@@ -29,7 +27,6 @@ return (
             </CardBody>
         </Card>
           </Col>
-        </Row>
       </div>
 )
 }
