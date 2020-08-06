@@ -1,6 +1,7 @@
 import React from "react";
 import CardHeading from "../cardHeader/index";
 import CrdBody from "../CardBody/index";
+import "../card/style.css";
 import {
   Card, Col
 } from 'reactstrap';
@@ -15,7 +16,7 @@ return (
       </Card>
     </Col>
   </div>
-)
+  )
 }
 
 export default ItineraryCard;
