@@ -3,6 +3,7 @@ import Navigation from './components/navbar/index';
 import Rows from './components/Row/index';
 // import Cols from './components/Col/index';
 import ItineraryCard from "./components/card/index";
+import FormCard from "./components/NewItinerary/FormCard/index";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       {/* <Cols /> */}
       <Navigation />
       <ItineraryCard />
+      <FormCard />
     </div>
   );
 }

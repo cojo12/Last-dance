@@ -11,7 +11,7 @@ import {
 } from 'reactstrap';
 
 
-function Navigation({}) {
+function Navigation() {
 
   return (
 
