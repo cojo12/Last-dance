@@ -1,5 +1,5 @@
 module.exports = {
-  Event: require('./eventSchema'),
-  Itinerary: require('./itinerarySchema'),
-  Location: require('./locationSchema')
+  Itinerary: require('./Itinerary'),
+  Event: require('./Event'),
+  // Location: require('./locationSchema')
 };
