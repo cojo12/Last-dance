@@ -6,17 +6,22 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.18.0",
     "bootstrap": "^4.5.1",
+    "express": "^4.17.1",
     "mongoose": "^5.9.27",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
-    "reactstrap": "^8.5.1"
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.3.0",
+    "reactstrap": "^8.5.1",
+    "router": "^1.3.5",
+    "routes": "^2.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -26,6 +31,7 @@
     "production": [
       ">0.2%",
       "not dead",
+      "not ie <= 11",
       "not op_mini all"
     ],
     "development": [
@@ -33,5 +39,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "> Take a journey with us. Use the Journey app to create and share your favorite travel itineraries with others!",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cojo12/Last-dance.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cojo12/Last-dance/issues"
+  },
+  "homepage": "https://github.com/cojo12/Last-dance#readme"
 }
