@@ -2,6 +2,7 @@
   "name": "itinershare",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:3001/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -19,13 +20,14 @@
     "routes": "^2.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "seed": "node scripts/seedDB.js",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
   },
   "browserslist": {
     "production": [
@@ -42,7 +44,10 @@
   },
   "description": "> Take a journey with us. Use the Journey app to create and share your favorite travel itineraries with others!",
   "main": "server.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.18.7"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cojo12/Last-dance.git"
