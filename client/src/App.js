@@ -1,10 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Navigation from './components/navbar/index';
+import Navigation from "./components/navbar/index";
 import Discover from "./pages/Discover";
 import Favorites from "./pages/Favorites";
 import MyItineraries from "./pages/MyItineraries";
 import Details from "./pages/Detail";
+import Profile from "./pages/Profile";
 
 function App() {
   return (
@@ -22,10 +23,12 @@ function App() {
             <MyItineraries />
           </Route>
           <Route exact path="/itinerary/:id">
-            
           </Route>
           <Route exact path={"/detail"}>
             <Details />
+          </Route>
+          <Route exact path={"/profile"}>
+            <Profile />
           </Route>
         </Switch>
       </div>

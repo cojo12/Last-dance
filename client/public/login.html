@@ -6,6 +6,7 @@
     <link rel="icon" href="./images/icons/journey-favicon_roundedge.ico" />
     <title>Login | Journey</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styling/logins.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -38,7 +39,7 @@
           <h1 class="display-4">Journey</h1>
           <div col-md-3></div>
           <div col-md-6>
-            <div class="card" style="width: 100%;">
+            <div class="card">
                 <div class="card-body">
                     <form>
                         <div class="form-group">
@@ -49,8 +50,12 @@
                             <label for="inputPassword">Password</label>
                             <input type="password" class="form-control" id="inputPassword" placeholder="enter your password">
                         </div>
-                        <div class="form-group">
-                            <label class="form-check-label"><input type="checkbox"> Remember me</label>
+                        <div class="submit-controls">
+                            <div class="form-group">
+                                <label class="form-check-label"><input type="checkbox"> Remember me</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Sign in</button>
+                            <p>Don't have account? <a href="#">Create one here</a></p>                 
                         </div>
                         <button type="submit" class="btn btn-primary">Sign in</button>
                         <p>Don't have account? <a href="./newlogin.html">Create one here</a></p>                 
