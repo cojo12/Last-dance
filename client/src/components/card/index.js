@@ -6,12 +6,16 @@ import {
   Card, Col
 } from 'reactstrap';
 
-function ItineraryCard() {
+function ItineraryCard({itineraryName}) {
+  
 return (
   <div>
-    <Col sm="6">
+    <Col sm="8">
       <Card>
-        <CardHeading />
+        <CardHeading 
+        itineraryName = {itineraryName.itineraryName}
+        />
+
         <CrdBody />
       </Card>
     </Col>

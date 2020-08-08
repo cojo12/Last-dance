@@ -1,13 +1,19 @@
 import React from "react";
+import CardHeaderTitle from "../cardHeaderTitle";
 import {
   CardHeader
 } from 'reactstrap';
+import API from "../../utils/API";
 
 function CardHeading({itineraryName}) {
   return(
-    <CardHeader itineraryName = {itineraryName}>
-      itinerary name placeholder
+    <div>
+    <CardHeader>
+      <CardHeaderTitle
+      itineraryName = {itineraryName} 
+      />
     </CardHeader>
+    </div>
   )
 }
 

@@ -10,6 +10,9 @@ mongoose.connect("mongodb://localhost/journey", {
 const itinerarySeed = [
   {
     itineraryName: "Provo Canyon"
+  },
+  {
+    itineraryName: "Little Cottonwood Drive"
   }
 
 ];
