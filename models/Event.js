@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
+// import Itinerary from "./Itinerary";
 
 const EventSchema = new Schema({
   entertainment: String,

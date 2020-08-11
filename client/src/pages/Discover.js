@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Col, Row, Container } from "../components/Grid";
 import ItineraryCard from "../components/card/index";
-// import api from "../utils/API";
 import API from "../utils/API";
 
 function Itinerary() {
@@ -16,7 +15,7 @@ function Itinerary() {
     }
     ) 
   }, []
-  )
+  );
 
     return (
       

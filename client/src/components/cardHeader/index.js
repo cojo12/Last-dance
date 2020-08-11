@@ -3,7 +3,6 @@ import CardHeaderTitle from "../cardHeaderTitle";
 import {
   CardHeader
 } from 'reactstrap';
-import API from "../../utils/API";
 
 function CardHeading({itineraryName}) {
   return(

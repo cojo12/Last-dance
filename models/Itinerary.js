@@ -2,9 +2,11 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const ItinerarySchema = new Schema({
-  itineraryName: {
-    type: String
-  },
+  itineraryName: String,
+  country: String,
+  city: String,
+  state: String,
+  zip: String,
   events: [
     {
       type: Schema.Types.ObjectId,

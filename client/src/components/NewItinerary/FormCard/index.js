@@ -6,7 +6,7 @@ import { Card, Col, CardBody } from 'reactstrap';
 
 const FormCard = (props) => {
   return (
-    <Col sm="6">
+    <Col md="12">
       <Card>
         <FormHeading />
         <CardBody>
