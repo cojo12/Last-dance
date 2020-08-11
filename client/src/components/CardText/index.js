@@ -4,12 +4,10 @@ import {
   CardText
 } from 'reactstrap';
 
-function CrdText ({entertainment, description}){
+function CrdText ({description}){
   return (
     <CardText>
-      <strong>entertainment placeholder{entertainment}</strong>
-      <br/>
-      description placeholder {description}
+      <strong>Description Placeholder{description}</strong>
     </CardText>
   )
 }

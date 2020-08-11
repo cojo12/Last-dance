@@ -1,16 +1,18 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import CrdTitle from "../CardTitle";
 import CrdText from "../CardText";
 import ViewMoreBtn from "../CardBtn";
 import {
   CardBody
 } from 'reactstrap';
+// import API from "../../utils/API";
 
-function CrdBody() {
+function CrdBody({entertainment, description}) {
+
   return(
     <CardBody>
-      <CrdTitle />
-      <CrdText />
+      <CrdTitle entertainment = {entertainment} />
+      <CrdText description = {description} />
       <ViewMoreBtn />
     </CardBody>
   )

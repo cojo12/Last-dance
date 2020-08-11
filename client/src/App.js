@@ -24,6 +24,8 @@ function App() {
           </Route>
           <Route exact path="/itinerary/:id">
           </Route>
+          <Route exact path="/event/:id">
+          </Route>
           <Route exact path={"/detail"}>
             <Details />
           </Route>
