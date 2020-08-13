@@ -2,9 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navigation from "./components/navbar/index";
 import Discover from "./pages/Discover";
-import Favorites from "./pages/Favorites";
-import MyItineraries from "./pages/MyItineraries";
-import Details from "./pages/Detail";
+import MyItineraries from "./pages/CreateItinerary";
 import Profile from "./pages/Profile";
 
 function App() {
@@ -16,18 +14,12 @@ function App() {
           <Route exact path={["/", "/discover"]}>
             <Discover />
           </Route>
-          <Route exact path={"/favorites"}>
-            <Favorites />
-          </Route>
-          <Route exact path={"/myitineraries"}>
+          <Route exact path={"/createitinerary"}>
             <MyItineraries />
           </Route>
           <Route exact path="/itinerary/:id">
           </Route>
           <Route exact path="/event/:id">
-          </Route>
-          <Route exact path={"/detail"}>
-            <Details />
           </Route>
           <Route exact path={"/profile"}>
             <Profile />

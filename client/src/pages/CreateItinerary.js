@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Col, Row, Container } from "../components/Grid";
 import FormCard from "../components/NewItinerary/FormCard";
 
-function Itinerary() {
+function MyItinerary() {
 
 
     return (
@@ -18,4 +18,4 @@ function Itinerary() {
   }
 
 
-export default Itinerary;
+export default MyItinerary;
