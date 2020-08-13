@@ -2,3 +2,25 @@ img {
   height: 40px;
   width: 130px;
 }
+
+.navCover {
+  color: #f7f9fb;
+  background-color: #31708e;
+  /* background-color: #143d55; */
+}
+
+.nav-link {
+  color: #f7f9fb
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #66fcf1;
+}
+
+.btn-secondary {
+  background-color: #66fcf1;
+  color: #1f2833;
+}
+a:hover {
+ color: #cccccc
+}

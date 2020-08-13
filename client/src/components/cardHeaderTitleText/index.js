@@ -1,7 +1,7 @@
 import React from "react";
 
 function CardHeaderTitleText({itineraryName}) {
-  return <h2>{itineraryName}</h2>;
+  return <h3>{itineraryName}</h3>;
 }
 
 export default CardHeaderTitleText;

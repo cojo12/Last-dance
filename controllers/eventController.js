@@ -6,7 +6,7 @@ module.exports = {
     db.Event
       .find(req.query)
       // .populate("events")
-      .sort({ EventName: 1 })
+      .sort({ entertainment: 1 })
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
@@ -20,7 +20,7 @@ module.exports = {
     console.log(req.body)
     db.Event
       .create(req.body)
-      .then(({_id}) => db.Itinerary.findOneAndUpdate ({},{$push: {events: _id}}, { new: true}))
+      .then(({_id}) => db.Itinerary.findOneAndUpdate ({ _id: req.body.itineraryId },{$push: {events: _id}}, { new: true}))
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },

@@ -1,5 +1,5 @@
 import React from "react";
-import '../navbar/style.css'
+import './style.css'
 
 import {
   Navbar,
@@ -15,10 +15,10 @@ function Navigation() {
   return (
 
     <div>
-      <Navbar color="light" light expand="md">
+      <Navbar className="navCover" expand="md">
         {/* <NavbarBrand href="/">Journey</NavbarBrand> */}
       <img
-      src = {'./journey-logo.png'}
+      src = {'/journey-logo.png'}
       alt = "Journey Logo"
       />
           

@@ -5,7 +5,7 @@ import Discover from "./pages/Discover";
 import Favorites from "./pages/Favorites";
 import MyItineraries from "./pages/MyItineraries";
 import Details from "./pages/Detail";
-import Profile from "./pages/Profile";
+import Profile from "./pages/profile/";
 
 function App() {
   return (
@@ -23,6 +23,8 @@ function App() {
             <MyItineraries />
           </Route>
           <Route exact path="/itinerary/:id">
+          </Route>
+          <Route exact path="/event/:id">
           </Route>
           <Route exact path={"/detail"}>
             <Details />
