@@ -18,7 +18,7 @@ function Navigation() {
       <Navbar color="light" light expand="md">
         {/* <NavbarBrand href="/">Journey</NavbarBrand> */}
       <img
-      src = {'./journey-logo.png'}
+      src = {'/journey-logo.png'}
       alt = "Journey Logo"
       />
           

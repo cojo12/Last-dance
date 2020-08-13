@@ -4,7 +4,7 @@ import Navigation from "./components/navbar/index";
 import Discover from "./pages/Discover";
 import Favorites from "./pages/Favorites";
 import MyItineraries from "./pages/MyItineraries";
-import Details from "./pages/Detail";
+import FullDetails from "./pages/FullDetails";
 import Profile from "./pages/Profile";
 
 function App() {
@@ -24,8 +24,8 @@ function App() {
           </Route>
           <Route exact path="/itinerary/:id">
           </Route>
-          <Route exact path={"/detail"}>
-            <Details />
+          <Route exact path={"/FullDetails"}>
+            <FullDetails />
           </Route>
           <Route exact path={"/profile"}>
             <Profile />
