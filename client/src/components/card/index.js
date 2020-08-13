@@ -11,7 +11,7 @@ function ItineraryCard({itineraryName}) {
 return (
   <div>
     <Col sm="8">
-      <Card>
+      <Card id = {itineraryName._id}>
         <CardHeading 
         itineraryName = {itineraryName.itineraryName}
         />

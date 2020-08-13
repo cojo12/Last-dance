@@ -1,22 +1,21 @@
 import React, { useState, useEffect } from "react";
 import { Col, Row, Container } from "../components/Grid";
 import ItineraryCard from "../components/card/index";
-// import api from "../utils/API";
 import API from "../utils/API";
 
 function Itinerary() {
   const [itineraryName, setItineraryName] = useState ([])
 
-  useEffect(( )=> {
+  useEffect(( ) => {
     API.getItineraries().then((res) => {
      setItineraryName(res.data)
       
       console.log(res.data)
       return
     }
-    ) 
+    )
   }, []
-  )
+  );
 
     return (
       
@@ -26,7 +25,7 @@ function Itinerary() {
             {itineraryName.map( itinerary => {
               return (
             <ItineraryCard 
-            itineraryName = {itinerary} key= {itinerary._id}/>
+            itineraryName = {itinerary} id= {itinerary._id}/>
               )
             })}
             

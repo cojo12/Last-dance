@@ -5,12 +5,14 @@ import ViewMoreBtn from "../CardBtn";
 import {
   CardBody
 } from 'reactstrap';
+// import API from "../../utils/API";
 
-function CrdBody() {
+function CrdBody({entertainment, description}) {
+
   return(
     <CardBody>
-      <CrdTitle />
-      <CrdText />
+      <CrdTitle entertainment = {entertainment} />
+      <CrdText description = {description} />
       <ViewMoreBtn />
     </CardBody>
   )

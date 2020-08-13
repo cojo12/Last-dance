@@ -27,10 +27,7 @@ function Navigation() {
               <NavLink href="/discover/">Discover</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/favorites/">Favorites</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/myitineraries/">My Itineraries</NavLink>
+              <NavLink href="/createitinerary/">Create Itinerary</NavLink>
             </NavItem>
           </Nav>
           <a href = "/profile/" target="_blank">

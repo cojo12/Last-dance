@@ -4,12 +4,6 @@ export default {
   // Gets all Itineraries
   getItineraries: function() {
     return axios.get("/api/itinerary");
-        // .then(res => {
-    //   const itineraryName = res.data;
-    //   return itineraryName.map(user => {
-
-    //   })
-    // })
   },
   // Gets the Itinerary with the given id
   getItinerary: function(id) {

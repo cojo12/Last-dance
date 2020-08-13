@@ -16,10 +16,7 @@ function App() {
           <Route exact path={["/", "/discover"]}>
             <Discover />
           </Route>
-          <Route exact path={"/favorites"}>
-            <Favorites />
-          </Route>
-          <Route exact path={"/myitineraries"}>
+          <Route exact path={"/createitinerary"}>
             <MyItineraries />
           </Route>
           <Route exact path="/itinerary/:id">
