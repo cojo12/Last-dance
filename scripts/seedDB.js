@@ -14,14 +14,14 @@ const itinerarySeed = [
     city: "Provo",
     state: "Utah",
     zip: "84057",
-    events: [
-      {
-        entertainment: "Provo Canyon Drive",
-        suggestions: "Watch out for bullet bikes.",
-        cost: 0,
-        description: "Beautiful canyon with lots of places to pull over and view the sights. Also a lot of parks to enjoys a quick meal."
-      }
-    ]
+    // events: [
+    //   {
+    //     entertainment: "Provo Canyon Drive",
+    //     suggestions: "Watch out for bullet bikes.",
+    //     cost: 0,
+    //     description: "Beautiful canyon with lots of places to pull over and view the sights. Also a lot of parks to enjoys a quick meal."
+    //   }
+    // ]
   },
   {
     itineraryName: "Little Cottonwood Drive",
@@ -29,14 +29,14 @@ const itinerarySeed = [
     city: "Cottonwood Heights",
     state: "Utah",
     zip: "84020",
-    events: [
-      {
-        entertainment: "Skiing",
-        suggestions: "Alta is the best!",
-        cost: 200,
-        description: "Ski with the ski people."
-      }
-    ]
+    // events: [
+    //   {
+    //     entertainment: "Skiing",
+    //     suggestions: "Alta is the best!",
+    //     cost: 200,
+    //     description: "Ski with the ski people."
+    //   }
+    // ]
   }
 
 ];
