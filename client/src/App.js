@@ -2,7 +2,9 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navigation from "./components/navbar/index";
 import Discover from "./pages/Discover";
-import MyItineraries from "./pages/CreateItinerary";
+import Favorites from "./pages/Favorites";
+import MyItineraries from "./pages/MyItineraries";
+import FullDetails from "./pages/FullDetails";
 import Profile from "./pages/Profile";
 
 function App() {
@@ -19,7 +21,8 @@ function App() {
           </Route>
           <Route exact path="/itinerary/:id">
           </Route>
-          <Route exact path="/event/:id">
+          <Route exact path={"/FullDetails"}>
+            <FullDetails />
           </Route>
           <Route exact path={"/profile"}>
             <Profile />
