@@ -2,8 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navigation from "./components/navbar/index";
 import Discover from "./pages/Discover";
-import Favorites from "./pages/Favorites";
-import MyItineraries from "./pages/MyItineraries";
+import CreateItinerary from "./pages/CreateItinerary";
 import FullDetails from "./pages/FullDetails";
 import Profile from "./pages/Profile";
 
@@ -17,7 +16,7 @@ function App() {
             <Discover />
           </Route>
           <Route exact path={"/createitinerary"}>
-            <MyItineraries />
+            <CreateItinerary />
           </Route>
           <Route exact path="/itinerary/:id">
           </Route>
