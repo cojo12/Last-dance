@@ -6,6 +6,7 @@ import API from "../utils/API";
 function Itinerary() {
   const [itineraryName, setItineraryName] = useState ([])
 
+
   useEffect(( ) => {
     API.getItineraries().then((res) => {
      setItineraryName(res.data)
