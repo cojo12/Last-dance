@@ -5,11 +5,14 @@ import Discover from "./pages/Discover";
 import CreateItinerary from "./pages/CreateItinerary";
 import FullDetails from "./pages/FullDetails";
 import Profile from "./pages/Profile";
+// import NewLogin from "./pages/NewLogin";
+import Auth0ProviderWithHistory from "./auth0-provider-with-history"
 
 function App() {
   return (
     <Router>
       <div>
+        <Auth0ProviderWithHistory>
         <Navigation />
         <Switch>
           <Route exact path={["/", "/discover"]}>
@@ -26,9 +29,14 @@ function App() {
           <Route exact path={"/profile"}>
             <Profile />
           </Route>
+          <Route exact path={"/signup"}>
+            {/* <NewLogin /> */}
+          </Route>
         </Switch>
+        </Auth0ProviderWithHistory>
       </div>
     </Router>
+
   );
 }
 
