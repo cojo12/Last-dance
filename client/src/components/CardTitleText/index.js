@@ -1,7 +1,7 @@
 import React from "react";
 
-function CardTitleText({entertainment}) {
-  return <h4>Entertainment Placeholder{entertainment}</h4>;
+function CardTitleText({country}) {
+  return <h4>{country}</h4>;
 }
  
 export default CardTitleText;

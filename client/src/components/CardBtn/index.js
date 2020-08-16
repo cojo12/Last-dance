@@ -1,16 +1,19 @@
 import React from "react";
+import "./style.css";
 import {
-  Button, Form
+  Button
 } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 function ViewMoreBtn(){
   return (
+  
+    <Button className="btn see-details" size="md"  >
       <Link to="/FullDetails">
-  <Button color="success" size="md">
-  See Full Details
+      View Full Details
+    </Link>
   </Button>
-  </Link>
+
   )
 }
 
