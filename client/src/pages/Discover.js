@@ -5,11 +5,17 @@ import API from "../utils/API";
 
 function Itinerary() {
   const [itineraryName, setItineraryName] = useState ([])
+  const [country, setCountry] = useState ([]);
+  const [state, setState] = useState ([]);
+  const [city, setCity] = useState ([]);
 
 
   useEffect(( ) => {
     API.getItineraries().then((res) => {
      setItineraryName(res.data)
+     setCountry(res.data);
+     setState(res.data);
+     setCity(res.data);
       
       console.log(res.data)
       return

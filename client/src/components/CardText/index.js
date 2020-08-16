@@ -4,10 +4,10 @@ import {
   CardText
 } from 'reactstrap';
 
-function CrdText ({description}){
+function CrdText ({city, state}){
   return (
     <CardText>
-      <strong>Description Placeholder{description}</strong>
+      <strong>{city}, {state}</strong>
     </CardText>
   )
 }

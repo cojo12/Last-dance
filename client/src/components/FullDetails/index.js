@@ -1,9 +1,11 @@
-import React from "react"
+import React from "react";
 
-function fullCard() {
+
+function fullCard({itineraryName}) {
   return(
     <div>
-      Full Details
+      <h1>{itineraryName} Full Details </h1>
+      
     </div>
   )
 

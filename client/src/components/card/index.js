@@ -16,7 +16,10 @@ return (
         itineraryName = {itineraryName.itineraryName}
         />
 
-        <CrdBody />
+        <CrdBody 
+        country = {itineraryName.country} 
+        state = {itineraryName.state} 
+        city = {itineraryName.city} />
       </Card>
     </Col>
   </div>
