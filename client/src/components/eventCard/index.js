@@ -1,5 +1,4 @@
-import React, {useState, Component}from "react";
-import API from "../../utils/API";
+import React, { Component}from "react";
 import {
   Card,
   CardBody,
@@ -8,7 +7,6 @@ import {
   CardText,
   Button
 } from 'reactstrap';
-import { render } from "@testing-library/react";
 
 class EventCard extends Component {
 
@@ -46,12 +44,8 @@ render(){
         <CardTitle>{this.state.events.cost }</CardTitle>
         <CardTitle>{this.state.events.description }</CardTitle>
             <CardSubtitle>Card subtitle</CardSubtitle>
-            {/* <CardText>{ Object.keys(events).map(event => {
-
-              return(
-                <p>{event.entertainment}</p>
-              )
-            }) }</CardText> */}
+              <CardText>
+              </CardText>
             <Button>Button</Button>
           </CardBody>
       </Card>
