@@ -1,6 +1,7 @@
 import React from "react";
 import './style.css'
-
+import '../navbar/style.css'
+import LoginButton from '../LoginButton';
 import {
   Navbar,
   Nav,
@@ -27,15 +28,16 @@ function Navigation() {
               <NavLink href="/discover/">Discover</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/favorites/">Favorites</NavLink>
+              <NavLink href="/createitinerary/">Create Itinerary</NavLink>
             </NavItem>
-            <NavItem>
-              <NavLink href="/myitineraries/">My Itineraries</NavLink>
-            </NavItem>
+            {/* <NavItem>
+              <NavLink href="/signup/">Sign Up</NavLink>
+            </NavItem> */}
           </Nav>
           <a href = "/profile/" target="_blank">
             <Button>My Profile</Button>
           </a>
+          <LoginButton/>
 
       </Navbar>
     </div>

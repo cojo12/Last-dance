@@ -4,10 +4,10 @@ import {
   CardTitle
 } from 'reactstrap';
 
-function CrdTitle({entertainment}) {
+function CrdTitle({country}) {
   return(
     <CardTitle>
-      <CardTitleText entertainment={entertainment}/>
+      <CardTitleText country={country}/>
     </CardTitle>
   );
 }

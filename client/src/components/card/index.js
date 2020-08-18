@@ -11,12 +11,15 @@ function ItineraryCard({itineraryName}) {
 return (
   <div>
     <Col sm="8">
-      <Card>
+      <Card id = {itineraryName._id}>
         <CardHeading 
         itineraryName = {itineraryName.itineraryName}
         />
 
-        <CrdBody />
+        <CrdBody 
+        country = {itineraryName.country} 
+        state = {itineraryName.state} 
+        city = {itineraryName.city} />
       </Card>
     </Col>
   </div>

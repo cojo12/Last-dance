@@ -3,6 +3,8 @@ import SaveItineraryBtn from "../FormButton/index";
 import { Form, FormGroup, Label, Input, Row, Col } from 'reactstrap';
 import Axios from 'axios';
 import API from '../../../utils/API';
+// import { post } from '../../../../../routes';
+// import { create } from '../../../../../models/Event';
 
 function ItineraryForm() {
   const [itineraryName, setItineraryName] = useState ("");
@@ -18,6 +20,7 @@ function ItineraryForm() {
 
   function submitItinerary(e) {
     e.preventDefault();
+    e.target.reset();
     Axios.post("/api/itinerary", {
       itineraryName,
       country,
@@ -39,11 +42,21 @@ function ItineraryForm() {
       console.log(res)
     })
     .catch(err => console.log(err));
+    // itineraryName.current.value = "";
+    // country.current.value = "";
+    // city.current.value = "";
+    // state.current.value = "";
+    // zip.current.value = "";
+    // entertainment.current.value  = "";
+    // suggestions.current.value = "";
+    // cost.current.value = "";
+    // description.current.value = "";
   }
+
 
   
   return (
-    <Form onSubmit = {submitItinerary}>
+    <Form id="new-itinerary" onSubmit = {submitItinerary}>
     <FormGroup>
       <Label for="itineraryName">Itinerary Name</Label>
       <Input type="text" name="itineraryName" id="itineraryName" placeholder="Awesomesauce" onChange = {(e) => {setItineraryName(e.target.value)}} value = {itineraryName}/>

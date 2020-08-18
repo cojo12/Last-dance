@@ -2,39 +2,41 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navigation from "./components/navbar/index";
 import Discover from "./pages/Discover";
-import Favorites from "./pages/Favorites";
-import MyItineraries from "./pages/MyItineraries";
-import Details from "./pages/Detail";
-import Profile from "./pages/profile/";
+import CreateItinerary from "./pages/CreateItinerary";
+import FullDetails from "./pages/FullDetails";
+import Profile from "./pages/Profile";
+// import NewLogin from "./pages/NewLogin";
+import Auth0ProviderWithHistory from "./auth0-provider-with-history"
 
 function App() {
   return (
     <Router>
       <div>
+        <Auth0ProviderWithHistory>
         <Navigation />
         <Switch>
           <Route exact path={["/", "/discover"]}>
             <Discover />
           </Route>
-          <Route exact path={"/favorites"}>
-            <Favorites />
-          </Route>
-          <Route exact path={"/myitineraries"}>
-            <MyItineraries />
+          <Route exact path={"/createitinerary"}>
+            <CreateItinerary />
           </Route>
           <Route exact path="/itinerary/:id">
           </Route>
-          <Route exact path="/event/:id">
-          </Route>
-          <Route exact path={"/detail"}>
-            <Details />
+          <Route exact path={"/FullDetails"}>
+            <FullDetails />
           </Route>
           <Route exact path={"/profile"}>
             <Profile />
           </Route>
+          <Route exact path={"/signup"}>
+            {/* <NewLogin /> */}
+          </Route>
         </Switch>
+        </Auth0ProviderWithHistory>
       </div>
     </Router>
+
   );
 }
 

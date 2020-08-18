@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Col, Row, Container } from "../components/Grid";
-import FormCard from "../components/NewItinerary/FormCard";
+import ItineraryCard from "../components/card/index";
 
 function Itinerary() {
 
@@ -9,8 +9,8 @@ function Itinerary() {
       
       <Container fluid>
         <Row>
-          <Col size="md-12">
-            <FormCard />
+          <Col size="md-6">
+            <ItineraryCard />
           </Col>
         </Row>
       </Container>
