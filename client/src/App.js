@@ -7,8 +7,14 @@ import FullDetails from "./pages/FullDetails";
 import Profile from "./pages/Profile";
 // import NewLogin from "./pages/NewLogin";
 import Auth0ProviderWithHistory from "./auth0-provider-with-history"
+import UserProfile from "./components/UserProfile";
+import { useAuth0 } from "@auth0/auth0-react";
 
 function App() {
+  // const { isLoading } = useAuth0();
+
+  // if (isLoading) return <div>Loading...</div>
+
   return (
     <Router>
       <div>
@@ -25,6 +31,7 @@ function App() {
           </Route>
           <Route exact path="/FullDetails/:id" component = {FullDetails} />
           <Route exact path={"/profile"}>
+            <UserProfile />
             <Profile />
           </Route>
           <Route exact path={"/signup"}>

@@ -20,7 +20,6 @@ function Navigation() {
 
     <div>
       <Navbar color="light" light expand="md">
-        {/* <NavbarBrand href="/">Journey</NavbarBrand> */}
       <img
       src = {'/journey-logo.png'}
       alt = "Journey Logo"
@@ -28,17 +27,14 @@ function Navigation() {
           
         <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="/discover/">Discover</NavLink>
+              {isAuthenticated && (<NavLink href="/discover/">Discover</NavLink>)}
             </NavItem>
             <NavItem>
-              <NavLink href="/createitinerary/">Create Itinerary</NavLink>
+              {isAuthenticated && (<NavLink href="/createitinerary/">Create Itinerary</NavLink>)}
             </NavItem>
-            {/* <NavItem>
-              <NavLink href="/signup/">Sign Up</NavLink>
-            </NavItem> */}
           </Nav>
           <a href = "/profile/" target="_blank">
-            <Button>My Profile</Button>
+            {isAuthenticated && (<Button>My Profile</Button>)}
           </a>
           {!isAuthenticated && (<LoginButton/>)}
           {isAuthenticated && (<LogoutButton/>)}
