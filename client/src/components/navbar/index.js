@@ -8,9 +8,13 @@ import {
   NavLink,
   Button
 } from 'reactstrap';
+import LogoutButton from "../LogoutBtn";
+import { useAuth0 } from "@auth0/auth0-react";
 
 
 function Navigation() {
+
+  const {isAuthenticated} = useAuth0();
 
   return (
 
@@ -36,7 +40,8 @@ function Navigation() {
           <a href = "/profile/" target="_blank">
             <Button>My Profile</Button>
           </a>
-          <LoginButton/>
+          {!isAuthenticated && (<LoginButton/>)}
+          {isAuthenticated && (<LogoutButton/>)}
 
       </Navbar>
     </div>
