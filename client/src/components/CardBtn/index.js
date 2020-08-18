@@ -5,11 +5,11 @@ import {
 } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
-function ViewMoreBtn(){
+function ViewMoreBtn({id}){
   return (
   
     <Button className="btn see-details" size="md"  >
-      <Link to="/FullDetails">
+      <Link to={`/FullDetails/${id}`}>
       View Full Details
     </Link>
   </Button>

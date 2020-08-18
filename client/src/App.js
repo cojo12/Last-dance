@@ -23,9 +23,7 @@ function App() {
           </Route>
           <Route exact path="/itinerary/:id">
           </Route>
-          <Route exact path={"/FullDetails"}>
-            <FullDetails />
-          </Route>
+          <Route exact path="/FullDetails/:id" component = {FullDetails} />
           <Route exact path={"/profile"}>
             <Profile />
           </Route>

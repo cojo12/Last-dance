@@ -17,7 +17,6 @@ function Itinerary() {
      setState(res.data);
      setCity(res.data);
       
-      console.log(res.data)
       return
     }
     )
@@ -30,6 +29,7 @@ function Itinerary() {
         <Row>
           <Col size="md-6">
             {itineraryName.map( itinerary => {
+              console.log(itinerary)
               return (
             <ItineraryCard 
             itineraryName = {itinerary} id= {itinerary._id}/>

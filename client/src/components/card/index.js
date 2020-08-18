@@ -19,7 +19,8 @@ return (
         <CrdBody 
         country = {itineraryName.country} 
         state = {itineraryName.state} 
-        city = {itineraryName.city} />
+        city = {itineraryName.city}
+        id = {itineraryName._id} />
       </Card>
     </Col>
   </div>

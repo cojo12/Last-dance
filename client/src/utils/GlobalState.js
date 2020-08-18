@@ -76,7 +76,8 @@ const StoreProvider = ({ value = [], ...props }) => {
       country: "",
       city: "",
       state: "",
-      zip: 0
+      zip: 0,
+      events: []
     },
     favorites: [],
     loading: false

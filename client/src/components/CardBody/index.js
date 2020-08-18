@@ -7,13 +7,13 @@ import {
 } from 'reactstrap';
 // import API from "../../utils/API";
 
-function CrdBody({country, state, city}) {
+function CrdBody({country, state, city, id}) {
 
   return(
     <CardBody>
       <CrdTitle country={country} />
       <CrdText state={state} city={city}/>
-      <ViewMoreBtn />
+      <ViewMoreBtn id={id}/>
     </CardBody>
   )
 }
