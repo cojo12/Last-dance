@@ -1,0 +1,10 @@
+.loginBtn {
+  border: none;
+  background-color: transparent;
+  color: #1e3f66
+}
+
+.loginBtn:hover {
+  background-color: transparent;
+  color: #ad235e;
+}

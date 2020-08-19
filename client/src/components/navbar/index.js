@@ -19,28 +19,30 @@ function Navigation() {
   return (
 
     <div>
-      <Navbar color="light" light expand="md">
-      <img
+      <Navbar className="mainNav" expand="md">
+      <img 
+      height="40px"
+      width="130px"
       src = {'/journey-logo.png'}
       alt = "Journey Logo"
       />
           
         <Nav className="mr-auto" navbar>
             <NavItem>
-              {isAuthenticated && (<NavLink href="/discover/">Discover</NavLink>)}
+              {isAuthenticated && (<NavLink className="tabLink" href="/discover/">Discover</NavLink>)}
             </NavItem>
             <NavItem>
-              {isAuthenticated && (<NavLink href="/createitinerary/">Create Itinerary</NavLink>)}
+              {isAuthenticated && (<NavLink className="tabLink" href="/createitinerary/">Create Itinerary</NavLink>)}
             </NavItem>
           </Nav>
           <a href = "/profile/" target="_blank">
-            {isAuthenticated && (<Button><i class="fas fa-user-ninja"></i></Button>)}
+            {isAuthenticated && (<Button className="profileBtn"><i className="fas fa-user-ninja"></i></Button>)}
           </a>
-          {!isAuthenticated && (<LoginButton/>)}
-          {isAuthenticated && (<LogoutButton/>)}
+          {!isAuthenticated && (<LoginButton />)}
+          {isAuthenticated && (<LogoutButton className="logoutBtn"/>)}
 
       </Navbar>
-      {!isAuthenticated && (<div>Take a Journey</div>)}
+
     </div>
   )
   }

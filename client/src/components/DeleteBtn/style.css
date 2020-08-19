@@ -1,4 +1,9 @@
-.delete-btn {
-  float: right;
-  color: #e74944;
+.delBtn {
+  text-align: center;
+  color: #ad235e;
+  background-color: transparent;
+}
+
+.delProf {
+  text-align: center;
 }

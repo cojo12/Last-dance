@@ -12,6 +12,7 @@ import {
   CardText,
   Button
 } from 'reactstrap';
+import "./details.css";
 
 function FullDetails() {
   const params = useParams();
@@ -27,23 +28,24 @@ function FullDetails() {
     .catch(err => console.log(err));
   }
   }, [params] );
-  const addFavorite = () => {
-    dispatch({
-      type: Add_Favorite,
-      post: state.currentItinerary
-    });
-  };
+  // const addFavorite = () => {
+  //   dispatch({
+  //     type: Add_Favorite,
+  //     post: state.currentItinerary
+  //   });
+  // };
 
-  const removeFavorite = () => {
-    dispatch({
-      type: Remove_Favorite,
-      _id: state.currentItinerary._id
-    });
-  };
+  // const removeFavorite = () => {
+  //   dispatch({
+  //     type: Remove_Favorite,
+  //     _id: state.currentItinerary._id
+  //   });
+  // };
   console.log(state)
   return (
     <>{state.currentItinerary ? (
       <Container fluid>
+        <div className="deetsCon">
         <Row>
           <Col>
           <h1>
@@ -53,16 +55,17 @@ function FullDetails() {
         </Row>
         <Row>
           <Col>
-            <h2>{state.currentItinerary.country}, {state.currentItinerary.state}, {state.currentItinerary.city}</h2>
-            <Card>
+            <h3>{state.currentItinerary.country}, {state.currentItinerary.state}, {state.currentItinerary.city}</h3>
+            <Card className="eventCrd">
                 <CardBody>
                   <CardTitle>{state.currentItinerary.entertainment }</CardTitle>
-                      <CardSubtitle>{state.currentItinerary.description }</CardSubtitle>
-                        <CardText>
-                          <ul>
-                            <li>Cost: {state.currentItinerary.cost }</li>
-                            <li>{state.currentItinerary.suggestions }</li>
-                          </ul>
+                      <CardSubtitle className="eventSub">{state.currentItinerary.description }</CardSubtitle>
+                        <CardText className="eventTxt">
+                          
+                            <p>Cost: {state.currentItinerary.cost }
+                            <br />
+                            Suggestions: {state.currentItinerary.suggestions }</p>
+                          
                         </CardText>
                     </CardBody>
                 </Card>
@@ -85,6 +88,7 @@ function FullDetails() {
             </Link>
           </Col>
         </Row>
+        </div>
       </Container>
     ) : (
       <div>loading...</div>

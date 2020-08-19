@@ -10,7 +10,6 @@ function ItineraryCard({itineraryName}) {
   
 return (
   <div>
-    <Col sm="8">
       <Card id = {itineraryName._id}>
         <CardHeading 
         itineraryName = {itineraryName.itineraryName}
@@ -22,7 +21,6 @@ return (
         city = {itineraryName.city}
         id = {itineraryName._id} />
       </Card>
-    </Col>
   </div>
   )
 }

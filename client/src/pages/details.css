@@ -1,0 +1,21 @@
+.deetsCon {
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.eventSub{
+  margin-bottom: 15px;
+}
+
+.eventCrd {
+  background-color: #2e5984;
+  color: #fff;
+}
+
+.eventTxt {
+  margin-top: 10px;
+}
+
+a:hover {
+  color: #ad235e;
+}

@@ -1,0 +1,10 @@
+.logoutBtn {
+  border: none;
+  background-color: transparent;
+  color: #1e3f66
+}
+
+.logoutBtn:hover {
+  background-color: transparent;
+  color: #ad235e;
+}
