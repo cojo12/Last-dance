@@ -1,11 +1,17 @@
 import React, {useEffect} from "react";
 import {Link, useParams} from "react-router-dom";
-// import FullDetails from "../components/FullDetails/index";
 import { Container, Row, Col } from "../components/Grid";
 import API from "../utils/API";
 import { useStoreContext } from "../utils/GlobalState";
 import { Set_Current_Itinerary, Add_Favorite, Remove_Favorite} from "../utils/actions";
-import EventCard from "../components/eventCard/index";
+import {
+  Card,
+  CardBody,
+  CardTitle,
+  CardSubtitle,
+  CardText,
+  Button
+} from 'reactstrap';
 
 function FullDetails() {
   const params = useParams();
@@ -48,15 +54,20 @@ function FullDetails() {
         <Row>
           <Col>
             <h2>{state.currentItinerary.country}, {state.currentItinerary.state}, {state.currentItinerary.city}</h2>
-            {state.currentItinerary.events.map( event => {
-              console.log(event)
-              return (
-                <EventCard key="event" id="event"/>
-
-              )
-            })}
+            <Card>
+                <CardBody>
+                  <CardTitle>{state.currentItinerary.entertainment }</CardTitle>
+                      <CardSubtitle>{state.currentItinerary.description }</CardSubtitle>
+                        <CardText>
+                          <ul>
+                            <li>Cost: {state.currentItinerary.cost }</li>
+                            <li>{state.currentItinerary.suggestions }</li>
+                          </ul>
+                        </CardText>
+                    </CardBody>
+                </Card>
           </Col>
-          {state.favorites.indexOf(state.currentItinerary) !== -1 ? (
+          {/* {state.favorites.indexOf(state.currentItinerary) !== -1 ? (
             <button className="btn btn-danger" onClick={removeFavorite}>
               Lame
             </button>
@@ -65,7 +76,7 @@ function FullDetails() {
               Love it!
             </button>
           )
-        }
+        } */}
         </Row>
         <Row>
           <Col>

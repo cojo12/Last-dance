@@ -77,6 +77,10 @@ const StoreProvider = ({ value = [], ...props }) => {
       city: "",
       state: "",
       zip: 0,
+      entertainment: "",
+      suggestions: "",
+      cost: 0,
+      description: "",
       events: []
     },
     favorites: [],
