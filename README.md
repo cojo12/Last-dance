@@ -4,26 +4,26 @@
 Repo: https://github.com/cojo12/Last-dance
 
 # Quick Start
-1. Open the app here: [placeholder for heroku link]
+1. Open the app here: https://lastdance-journey.herokuapp.com/
 
 # Installation
-` placeholder `
+` npm i `
 
 # Technologies
 - React.js
 - Auth0
-- MapQuest
 
 # Contributors
 ## Cole Joko [![quiz](https://img.shields.io/badge/GitHub-Cole-black?logo=github&style=flat-square)](https://github.com/cojo12)
-- Repo Master
-- Frontend & Backend Dev
+- Repo & Idea Master
+- Primarily Backend with some Frontend
+- Auth0 Administrator
 
 ## Collin Vaccaro [![quiz](https://img.shields.io/badge/GitHub-Collin-black?logo=github&style=flat-square)](https://github.com/vinnie00)
-- Frontend & Backend Dev
+- Frontend Dev
 - Makes things pretty
 
 ## Miranda Loosle [![quiz](https://img.shields.io/badge/GitHub-Mirandor-black?logo=github&style=flat-square)](https://github.com/Mirandor)
 - Wireframing
-- Frontend & Backend Dev
+- Primarily Backend with some Frontend
 - Project Management
