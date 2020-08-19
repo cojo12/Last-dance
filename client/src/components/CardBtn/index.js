@@ -10,7 +10,7 @@ function ViewMoreBtn({id}){
   
     <Button className="btn see-details" size="md"  >
       <Link to={`/FullDetails/${id}`}>
-      View Full Details
+      Details
     </Link>
   </Button>
 

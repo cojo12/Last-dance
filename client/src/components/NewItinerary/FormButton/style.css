@@ -1,13 +1,5 @@
-a {
-  color: rgb(146, 148, 248);
-}
-
-a:hover {
-  color: rgb(146, 148, 248);
-  text-decoration: none;
-}
-
 .see-details {
+  color: rgb(146, 148, 248);
   text-decoration: none;
   border: 1px solid rgb(146, 148, 248);
   position: relative;
@@ -19,6 +11,14 @@ a:hover {
 .see-details:hover {
   box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
   background-color: transparent;
+  border: 1px solid rgb(146, 148, 248);
+  color: rgb(146, 148, 248);
+  text-decoration: none;
+}
+.btn-secondary:not(:disabled):not(.disabled):active {
+  box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+  background-color: transparent;
+  border: 1px solid rgb(146, 148, 248);
 }
 
 .see-details:before {

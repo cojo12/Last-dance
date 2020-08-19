@@ -1,0 +1,16 @@
+.delBtn {
+  text-align: center;
+  color: #ad235e;
+  background-color: transparent;
+  border: none;
+}
+
+.delBtn:hover{
+  color: #ad235e;
+  background-color: transparent;
+  border: none;
+}
+
+.delDiv {
+  text-align: center;
+}

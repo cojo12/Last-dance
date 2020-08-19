@@ -1,21 +1,24 @@
 import React from "react";
 import { useAuth0 } from "@auth0/auth0-react";
-import Profile from "../../pages/Profile";
-// import JSONPretty from 'react-json-pretty';
+import "./style.css";
+import { Container } from "reactstrap";
 
 const UserProfile = () => {
   const { user, isAuthenticated } = useAuth0();
 
   return (
     isAuthenticated && (
-
+      <Container className="userProf" fluid>
       <div>
-      <img src = {user.picture} alt={user.name} />
-      <p>Email : {user.name}</p>
-      <p>Username : {user.nickname}</p>
-      {/* <JSONPretty data={user} /> */}
-      {/* {JSON.stringify(user, null, 2)} */}
+      <img 
+      height="120px"
+      width="120px"
+      src = {user.picture}
+      alt={user.name} />
+      <h4>{user.nickname}</h4>
+      <h6>{user.name}</h6>
     </div>
+      </Container>
   )
   )
 }

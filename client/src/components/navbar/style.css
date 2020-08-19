@@ -1,4 +1,23 @@
-img {
-  height: 40px;
-  width: 130px;
+.mainNav {
+  background-color: #bcd2e8;
+  box-shadow: grey 1px 2px 3px;
+}
+
+.tabLink {
+  color: #1e3f66;
+}
+
+.tabLink:hover {
+  color: #ad235e;
+}
+
+.profileBtn, .logoutBtn {
+  border: none;
+  background-color: transparent;
+  color: #1e3f66
+}
+
+.profileBtn:hover {
+  background-color: transparent;
+  color: #ad235e;
 }

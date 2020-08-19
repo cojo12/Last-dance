@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import "./style.css";
 
 const DeleteProfile = (props) => {
   const {
@@ -12,8 +13,8 @@ const DeleteProfile = (props) => {
   const toggle = () => setModal(!modal);
 
   return (
-    <div>
-      <Button color="danger" onClick={toggle}>{buttonLabel}</Button>
+    <div class="delDiv">
+      <Button className="delBtn" onClick={toggle}>{buttonLabel}</Button>
       <Modal isOpen={modal} toggle={toggle} className={className}>
         <ModalHeader toggle={toggle}>Delete Account?</ModalHeader>
         <ModalBody>

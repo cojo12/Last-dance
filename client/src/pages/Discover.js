@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Col, Row, Container } from "../components/Grid";
 import ItineraryCard from "../components/card/index";
 import API from "../utils/API";
+import "./pagestyle.css";
 
 function Itinerary() {
   const [itineraryName, setItineraryName] = useState ([])

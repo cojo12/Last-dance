@@ -3,8 +3,10 @@ import SaveItineraryBtn from "../FormButton/index";
 import { Form, FormGroup, Label, Input, Row, Col } from 'reactstrap';
 import Axios from 'axios';
 import API from '../../../utils/API';
+import { Link } from 'react-router-dom';
 // import { post } from '../../../../../routes';
 // import { create } from '../../../../../models/Event';
+import "./style.css";
 
 function ItineraryForm() {
   const [itineraryName, setItineraryName] = useState ("");
@@ -60,7 +62,7 @@ function ItineraryForm() {
 
   
   return (
-    <Form id="new-itinerary" onSubmit = {submitItinerary}>
+    <Form className="newForm" id="new-itinerary" onSubmit = {submitItinerary}>
     <FormGroup>
       <Label for="itineraryName">Itinerary Name</Label>
       <Input type="text" name="itineraryName" id="itineraryName" placeholder="Awesomesauce" onChange = {(e) => {setItineraryName(e.target.value)}} value = {itineraryName}/>
@@ -112,6 +114,9 @@ function ItineraryForm() {
       <Input type="textarea" name="text" id="description" onChange = {(e) => {setDescription(e.target.value)}} value = {description}/>
     </FormGroup>
     <SaveItineraryBtn />
+    <div>
+    <p class="message">Page does not refresh, <Link to="/discover">return to discover</Link> or refresh to add more.</p>
+      </div>
   </Form>
   )
 }

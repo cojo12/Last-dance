@@ -6,11 +6,12 @@ import {
   CardBody
 } from 'reactstrap';
 // import API from "../../utils/API";
+import "./style.css";
 
 function CrdBody({country, state, city, id}) {
 
   return(
-    <CardBody>
+    <CardBody className="itineraryBody">
       <CrdTitle country={country} />
       <CrdText state={state} city={city}/>
       <ViewMoreBtn id={id}/>

@@ -2,10 +2,12 @@ import React from "react";
 import {
   Button
 } from 'reactstrap';
+import "./style.css";
 
 function SaveItineraryBtn(){
+
   return (
-  <Button color="primary" size="md">
+  <Button className="btn see-details" size="md">
   Submit
   </Button>
   )
