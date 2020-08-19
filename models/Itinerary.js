@@ -7,6 +7,10 @@ const ItinerarySchema = new Schema({
   city: String,
   state: String,
   zip: String,
+  entertainment: String,
+  suggestions: String,
+  cost: Number,
+  description: String,
   events: [
     {
       type: Schema.Types.ObjectId,

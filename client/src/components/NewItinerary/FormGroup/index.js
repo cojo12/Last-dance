@@ -27,17 +27,21 @@ function ItineraryForm() {
       city,
       state,
       zip,
+      entertainment,
+      suggestions,
+      cost,
+      description
     })
-    .then( result => {
-      console.log(result)
-      API.saveEvent({
-        entertainment,
-        suggestions,
-        cost,
-        description,
-        itineraryId: result.data._id
-      })
-    })
+    // .then( result => {
+    //   console.log(result)
+    //   API.saveEvent({
+    //     entertainment,
+    //     suggestions,
+    //     cost,
+    //     description,
+    //     itineraryId: result.data._id
+    //   })
+    // })
     .then(res => {
       console.log(res)
     })
