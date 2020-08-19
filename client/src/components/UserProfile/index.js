@@ -11,8 +11,8 @@ const UserProfile = () => {
 
       <div>
       <img src = {user.picture} alt={user.name} />
-      <p>{user.name}</p>
-      <p>{user.nickname}</p>
+      <p>Email : {user.name}</p>
+      <p>Username : {user.nickname}</p>
       {/* <JSONPretty data={user} /> */}
       {/* {JSON.stringify(user, null, 2)} */}
     </div>

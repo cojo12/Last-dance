@@ -34,12 +34,13 @@ function Navigation() {
             </NavItem>
           </Nav>
           <a href = "/profile/" target="_blank">
-            {isAuthenticated && (<Button>My Profile</Button>)}
+            {isAuthenticated && (<Button><i class="fas fa-user-ninja"></i></Button>)}
           </a>
           {!isAuthenticated && (<LoginButton/>)}
           {isAuthenticated && (<LogoutButton/>)}
 
       </Navbar>
+      {!isAuthenticated && (<div>Take a Journey</div>)}
     </div>
   )
   }

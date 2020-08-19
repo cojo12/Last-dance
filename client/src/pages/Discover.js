@@ -28,14 +28,13 @@ function Itinerary() {
       <Container fluid>
         <Row>
           <Col size="md-6">
-            {itineraryName.map( itinerary => {
+          {itineraryName.map( itinerary => {
               console.log(itinerary)
               return (
             <ItineraryCard 
             itineraryName = {itinerary} id= {itinerary._id}/>
               )
             })}
-            
           </Col>
         </Row>
       </Container>
