@@ -121,9 +121,6 @@ function ItineraryForm() {
       <Input type="textarea" name="text" id="description" onChange = {(e) => {setDescription(e.target.value)}} value = {description}/>
     </FormGroup>
     <SaveItineraryBtn />
-    <div>
-    <p class="message">Page does not refresh, <Link to="/discover">return to discover</Link> or refresh to add more.</p>
-      </div>
   </Form>
   )
 }
