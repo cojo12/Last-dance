@@ -7,6 +7,8 @@ import { Link } from 'react-router-dom';
 // import { post } from '../../../../../routes';
 // import { create } from '../../../../../models/Event';
 import "./style.css";
+import {findDOMNode} from "react-dom";
+import $ from "jquery";
 
 function ItineraryForm() {
   const [itineraryName, setItineraryName] = useState ("");
@@ -19,6 +21,10 @@ function ItineraryForm() {
   const [cost, setCost] = useState(0);
   const [description, setDescription] = useState("");
 
+
+
+    
+  
 
   function submitItinerary(e) {
     e.preventDefault();
@@ -46,17 +52,18 @@ function ItineraryForm() {
     // })
     .then(res => {
       console.log(res)
+      document.getElementById("new-itinerary").reset();
     })
     .catch(err => console.log(err));
-    // itineraryName.current.value = "";
-    // country.current.value = "";
-    // city.current.value = "";
-    // state.current.value = "";
-    // zip.current.value = "";
-    // entertainment.current.value  = "";
-    // suggestions.current.value = "";
-    // cost.current.value = "";
-    // description.current.value = "";
+    setItineraryName("");
+    setCountry("");
+    setCity("");
+    setState("");
+    setZip("");
+    setEntertainment ("");
+    setSuggestions("");
+    setCost("");
+    setDescription("");
   }
 
 
